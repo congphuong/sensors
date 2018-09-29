@@ -53,7 +53,7 @@ public class SensorsPlugin implements EventChannel.StreamHandler {
         for(int i = 0; i < rotationMatrixFromVector.length ; i++){
             values[i] = rotationMatrixFromVector[i];
         }
-        events.success(rotationMatrixFromVector);
+        events.success(values);
       }
     };
   }

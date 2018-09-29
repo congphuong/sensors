@@ -47,7 +47,7 @@ public class SensorsPlugin implements EventChannel.StreamHandler {
 
       @Override
       public void onSensorChanged(SensorEvent event) {
-        float[] rotationMatrixFromVector = new float[][16];
+        float[] rotationMatrixFromVector = new float[16];
         SensorManager.getRotationMatrixFromVector(rotationMatrixFromVector, event.values);
         events.success(rotationMatrixFromVector);
       }
